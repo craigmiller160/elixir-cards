@@ -28,9 +28,10 @@ defmodule Cards do
   The `hand_size` argument indicates how many cards should be in the hand.
 
   ## Examples
-      iex(1)> deck = Cards.create_deck
-      iex(2)> {hand,deck} = Cards.deal(deck, 1)
-      iex(3)> hand
+      iex> deck = Cards.create_deck
+      iex> {hand,deck} = Cards.deal(deck, 1)
+      iex> hand
+      ["Ace of Spades"]
   """
   def deal(deck, hand_size) do
     Enum.split(deck, hand_size)
